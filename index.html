@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arknights Website Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+<!-- Technologies used: Fontawesome, Heroicons -->
+
+
+
+<!------------------------------
+-----Nav Section-----
+-------------------------------->
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <div class="nav-logo-wrapper">
+                <a href="#home"><img src="./Images/kzLogo.jpeg" alt="Logo" class="nav-logo"></a>
+                <span class="nav-dev">KzDev</span>
+            </div>
+
+            <ul class="nav-ul">
+                <li class="nav-link"><a href="#header">Home</a></li>
+                <li class="nav-link"><a href="#header">About Me</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#Technologies">Technologies</a></li>
+                <!-- <li class="nav-link"><a href="#media">Media</a></li> -->
+                <li class="nav-link nav-link-login"><a href="#footer">CONTACT ME</a></li>
+            </ul>
+
+            <div class="nav-audio-wrapper">
+                <audio class="nav-audio-music" autoplay loop>
+                    <source src="./Audio/emotionalPiano.mp3">
+                </audio>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 nav-audio">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 nav-no-audio">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531V19.94a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.506-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z" />
+                </svg>
+            </div>
+
+            <span class="menu"><img src="./Images/menu.bad6396f.png" alt="Menu"class="nav-hamburger"></span>
+            <span class="menu-close"><img src="./Images/menuClose.6f8c1b46.png" alt="Menu Close" class="src"></span>
+
+        </div>
+
+        <div class="nav-login">
+            <span><img src="./Images/loginButton.941066cb.jpg" alt="Login Button" class="nav-login-image"></span>
+            <span class="nav-login-text">CONTACT</span>
+        </div>
+
+        <div class="nav-underline"></div>
+    </nav>
+
+
+
+
+
+
+<!------------------------------
+-----Header Section-----
+-------------------------------->
+    <header id="header" class="header-section section animated-element">
+
+        <div class="title-bg-1 header-title">
+            <div><img class="title-left-design" src="./Images/sectionTitleDeco.webp" alt="Deco"></div>
+            <p class="title-text-large">About</p>
+            <p class="title-text-small">About Me</p>
+            <div class="title-line-1"></div>
+            <div class="title-line-2"></div>
+        </div>
+
+        <div class="header-wrapper">
+
+            <div class="header-img-wrapper"><img src="./Images/KzImg1.png" alt="Picture Of Me" class="header-kz-img"></div>
+            <div class="header-content">
+                <h3>Hi, I'm Kai Zhe</h3>
+                <p>Welcome to my website, I am a self-taught software engineer in Singapore and I started my coding journey in 2022.</p>
+                <div class="header-subcontent">
+                    <div class="header-subcontent-education">
+                        <h3>Education</h3>
+                        <p>2020-2021: Saint Andrew's Junior College</p>
+                        <p>2022-2023: National Service</p>
+                        <p>2024-2027: SMU Software Engineering</p>
+                    </div>
+                    <div class="header-subcontent-skillsets">
+                        <h3>Skillsets</h3>
+                        <p>Frontend: Html, CSS, Javascript, React, VueJS, Material-UI, Bootstrap, Tailwind CSS</p>
+                        <p>Backend: NodeJS (ExpressJS), Python, Php, Java, MongoDB, MySQL, Firebase, REST API</p>
+                        <p>Development: Docker, Git</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+<!------------------------------
+-----Project Section-----
+-------------------------------->
+    <section id="projects" class="project-section section">
+        <div class="title-bg-2">
+            <div><img class="title-left-design" src="./Images/sectionTitleDeco.webp" alt="Deco"></div>
+            <p class="title-text-large">Projects</p>
+            <p class="title-text-small">Projects</p>
+            <div class="title-line-1"></div>
+            <div class="title-line-2"></div>
+        </div>
+
+
+        <div class="project-wrapper">
+            <div class="project-carousel-wrapper">
+
+                <button class="project-prev project-carousel-btns"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="project-carousel-wrapper-2">
+
+
+                    <div class="project-carousel">
+                        <a href="#contact" class="project-item">
+                            <div class="project-img">
+                                <div class="project-img-container">
+                                    <img class="project-img-2" src="https://source.unsplash.com/random?scenery/1000x1000" alt="">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i>View Project</p>
+                                </div>
+                                <div class="project-title">
+                                    <h3>Project Title Placeholder</h3>
+                                    <p>New Projects Coming Soon! Started making website on 11 Dec 2023, finished on 15 Dec, more to be updated!</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#contact" class="project-item">
+                            <div class="project-img">
+                                <div class="project-img-container">
+                                    <img class="project-img-2" src="https://source.unsplash.com/random?scenery/1000x1000" alt="">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i>View Project</p>
+                                </div>
+                                <div class="project-title">
+                                    <h3>Project 2 Title</h3>
+                                    <p>Project 2 subtitle. Estimated Completion Time: Early January 2024</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#contact" class="project-item">
+                            <div class="project-img">
+                                <div class="project-img-container">
+                                    <img class="project-img-2" src="https://source.unsplash.com/random?scenery/1000x1000" alt="">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i>View Project</p>
+                                </div>
+                                <div class="project-title">
+                                    <h3>Project 3</h3>
+                                    <p>Project 3 subtitle</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#contact" class="project-item">
+                            <div class="project-img">
+                                <div class="project-img-container">
+                                    <img class="project-img-2" src="https://source.unsplash.com/random?scenery/1000x1000" alt="">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i>View Project</p>
+                                </div>
+                                <div class="project-title">
+                                    <h3>Project 4</h3>
+                                    <p>Project 4 subtitle</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#contact" class="project-item">
+                            <div class="project-img">
+                                <div class="project-img-container">
+                                    <img class="project-img-2" src="https://source.unsplash.com/random?scenery/1000x1000" alt="">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i>View Project</p>
+                                </div>
+                                <div class="project-title">
+                                    <h3>Project 5</h3>
+                                    <p>Project 5 subtitle</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#contact" class="project-item">
+                            <div class="project-img">
+                                <div class="project-img-container">
+                                    <img class="project-img-2" src="https://source.unsplash.com/random?scenery/1000x1000" alt="">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i>View Project</p>
+                                </div>
+                                <div class="project-title">
+                                    <h3>Project 6</h3>
+                                    <p>Project 6 subtitle</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    
+                </div>
+                <button class="project-carousel-btns project-next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="project-carousel-btn">
+
+                <div class="project-carousel-seeMore">
+                    <div>
+                        <button class="project-carousel-seeMore-btn">•&nbsp See More &nbsp•</button>
+                    </div>
+                </div>
+    
+                <div class="project-carousel-seeLess">
+                    <div>
+                        <button class="project-carousel-seeLess-btn">•&nbsp See Less &nbsp•</button>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+
+
+
+
+    </section>
+
+
+
+
+<!------------------------------
+-----News Section-----
+-------------------------------->
+    <section id="Technologies" class="Technologies-section section">
+
+        <div class="title-bg-1">
+            <div><img class="title-left-design" src="./Images/sectionTitleDeco.webp" alt="Deco"></div>
+            <p class="title-text-large">Technologies</p>
+            <p class="title-text-small">Technologies</p>
+            <div class="title-line-1"></div>
+            <div class="title-line-2"></div>
+        </div>
+
+        <div class="logos logos-1">
+            <div class="logos-slide logos-slide-1">
+                <span><i class="fa-brands fa-docker"></i> Docker </span>
+                <span><i class="fa-brands fa-react"></i> React </span>
+                <span><i class="fa-solid fa-server"></i> MongoDB </span>
+                <span><i class="fa-solid fa-database"></i> MySQL</span>
+                <span><i class="fa-brands fa-vuejs"></i> VueJS </span>
+                <span><i class="fa-brands fa-git-alt"></i> Git </span>
+                <span><i class="fa-brands fa-bootstrap"></i> Bootstrap </span>
+            </div>
+        </div>
+        <div class="logos logos-2">
+            <div class="logos-slide logos-slide-2">
+                <span><i class="fa-brands fa-html5"></i> Html </span>
+                <span><i class="fa-brands fa-css3-alt"></i> CSS </span>
+                <span><i class="fa-brands fa-js"></i> Javascript </span>
+                <span><i class="fa-brands fa-node"></i> NodeJS </span>
+                <span><i class="fa-brands fa-python"></i> Python </span>
+                <span><i class="fa-brands fa-php"></i> Php </span>
+                <span><i class="fa-brands fa-java"></i> Java </span>
+            </div>
+          </div>
+    
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="hidden section" id="element3" style="text-align: center;">Element 3</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="contact"></section> <!--Testing, will delete later-->
+
+    <footer id="footer" class="footer-section section">
+        <div class="footer-wrapper">
+
+            <div>
+                <a href="mailto:wyattloh@gmail.com" class="footer__link">WyattLoh@gmail.com</a>
+
+                <p class="section__subtitle"> Contact me: +65 8299 3015</p>
+                <ul class="social-list">
+                    <!-- <li class="social-list__item"><a class="social-list__link"></a></li> -->
+                    <li class="social-list__item"><a class="social-list__link" href="https://vt.tiktok.com/ZSd9FKE77/"><i
+                                class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/loh_kai_zhe/"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="https://github.com/WyattLeoz"><i
+                                class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://kit.fontawesome.com/c01682fd13.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

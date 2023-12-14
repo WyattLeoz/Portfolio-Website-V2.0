@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Nav Section */
+
+.nav {
+    display: flex;
+    position: relative;
+    height: 4.5rem;
+    align-items: center;
+    background-image: url(./Images/nav.77e6df56.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.nav-wrapper {
+    display: flex;
+}
+
+
+.nav-logo {
+    height: 5rem;
+}
+
+
+
+.nav-ul {
+    display: none;
+    color: white;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+.nav-ul-mobile {
+    display: flex;
+}
+
+.nav-hamburger {
+    display: flex;
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+        height: 6rem;
+    }
+
+    .nav-logo {
+        height: 6rem;
+        margin-left: 1rem;
+    }
+
+    .nav-ul {
+        display: flex;
+    }
+
+    .nav-hamburger {
+        display: none
+    }
+}
+
+
+
+
+
+
+

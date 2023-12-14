@@ -1,0 +1,1189 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    background-image: url(./Images/bg.872a14cd.jpg);
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 1rem;
+
+    @media (max-width: 600px) {
+        font-size: 0.875rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.125rem;
+    }
+}
+
+
+/* .section {
+    margin-top: 3rem; */
+    /* padding-top: 8rem;
+} */
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* 
+-------------------------------------------------
+---Navigation Section---
+------------------------------------------------- */
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    background-image: url(./Images/nav.77e6df56.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+    color: white;
+    z-index: 10;
+}
+
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    /* height: 100%;   NOTE THIS SHOULD BE INCLUDED FIRST ELSE HARD TO EDIT CODE CHANGES */
+    justify-content: start;
+}
+
+.nav-logo-wrapper {
+    display: flex;
+}
+
+.nav-logo {
+    height: 8rem;
+    margin-left: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-dev {
+    font-size: 2.5rem;
+    position: relative;
+    top: 2.25rem;
+    right: 1rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .nav-logo {
+        height: 4.75rem;
+    }
+
+    .nav-dev {
+        font-size: 1.25rem;
+        top: 1.65rem;
+    }
+}
+
+.nav-audio-wrapper {
+    margin-left: auto;
+}
+
+.nav-audio,
+.nav-no-audio {
+    height: 2.5rem;
+    color: white;
+    margin-right: 1.5rem;
+    position: relative;
+    z-index: 11;
+    top: 2.8rem;
+    cursor: pointer;
+}
+
+.nav-audio:hover,
+.nav-no-audio:hover {
+    color: grey;
+}
+
+.nav-no-audio {
+    display: none;
+}
+
+.show-audio {
+    display: block;
+}
+
+.hide-audio {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-dev {
+        font-size: 1.25rem;
+    }
+    
+    .nav-audio,
+    .nav-no-audio {
+        height: 2rem;
+        top: 2rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .nav-audio,
+    .nav-no-audio {
+        height: 2rem;
+        top: 1.5rem;
+    }
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu,
+.menu-close {
+    display: none;
+    z-index: 10;
+}
+
+.nav-login {
+    position: relative;
+    width: 12.75rem;
+    min-height: 6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-login-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-login-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.nav-login-text > a {
+    color: black;
+}
+
+.nav-link-login {
+    display: none;
+}
+
+.nav-link-login > a {
+    color: black;
+}
+
+.nav-link > a:hover {
+    color: yellow;
+}
+
+.nav-link-login > a:hover {
+    color: black;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-ul {
+        padding: 1rem 2rem;
+    }
+
+    .nav-link {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        height: 3.5rem;
+    }
+
+    .nav-logo {
+        height: 5rem;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    .nav-wrapper {
+        display: relative;
+    }
+
+    .nav-ul {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-image: url(./Images/menuBg.e4e7c97e.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.25rem;
+        padding-bottom: 100%;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(-100%);
+        transition: 200ms ease-in;
+    }
+
+    .nav-ul-show {
+        transform: translateX(0);
+        transition: 200ms ease-in;
+    }
+
+    .nav-link {
+        margin-right: 2rem;
+        padding-top: 4rem;
+    }
+  
+    .menu {
+        display: flex;
+        height: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .menu-close {
+        height: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-login {
+        display: none;
+    }
+
+    .nav-link:first-child {
+        padding-top: 5rem;
+    }
+
+    .nav-link:last-child {
+        display: block;
+        background-image: url(./Images/loginButton.941066cb.jpg);
+        background-position: 10%;
+        margin-top: 3rem;
+        padding: 1.25rem 2.5rem;
+        border-radius: 0.25rem;
+        color: black;
+    }
+}
+
+
+
+.nav-underline {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /* background: linear-gradient(to right, rgb(245, 154, 245), rgb(255, 255, 115), #00ff00); */
+    background-image: linear-gradient(90deg,#ff00f0 17.5%,#fff100 17.5% 35.6%,#00ffa2 35.6% 100%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-underline {
+        height: 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-------------------------------------------------
+---Header Section---
+------------------------------------------------- */
+
+
+.header-section {
+    height: 820px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    .header-kz-img {
+        width: 300px;
+        /* margin-top: -100px; */
+    }
+
+    .header-wrapper {
+        text-align: center;
+        margin: 0 1.5rem;
+    }
+
+    /* Automatically scroll into view on website load, CHATGPT
+    .animated-element {
+        opacity: 0;
+        transform: translateY(20px);
+        position: relative;
+        z-index: -1;
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    } */
+}
+
+/* Automatically scroll into view on website load, CHATGPT */
+.animated-element {
+    opacity: 0;
+    transform: translateY(20px);
+    position: relative;
+    z-index: -1;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .header-title {
+        margin-top: -100px;
+    }
+
+    .header-section {
+        margin-top: 6rem; /* custom margin top size to move section closer to nav, only for larger screens */
+    }
+
+    .header-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    .header-kz-img {
+        position: absolute;
+        bottom: 0;
+        margin-top: -80px;
+        scale: 1.4;
+        width: 30vw;
+    }
+
+    .header-content {
+        position: absolute;
+        left: 30vw;
+    }
+}
+
+
+/* NEW */
+.header-subcontent {   /* Autofill */
+    display: block
+} 
+
+
+.header-subcontent-education {
+    margin-top: 4rem;
+}
+
+
+.header-subcontent-skillsets {
+    margin-top: 4rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header-section {
+        height: 990px;
+    }
+
+    .header-wrapper {
+        margin-top: -70px;
+    }
+
+    .header-subcontent {
+        text-align: left;
+    }
+
+    .header-subcontent-education {
+        margin-top: 2rem;
+    }
+    
+    .header-subcontent-skillsets {
+        margin-top: 2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-------------------------------------------------
+---Project Section (Main Section 1)---
+------------------------------------------------- */
+
+
+
+.project-section {
+    height: 750px;
+    overflow: hidden;
+    
+}
+
+.project-carousel-wrapper {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* height: 350px; */
+}
+
+
+.project-carousel-wrapper-2 {
+    width: 80vw;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+.project-carousel {
+    height: 300px;
+    width: 80vw;
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    display: flex;
+    transition: height 0.5s ease-in;
+
+    transition: transform 1s ease;
+}
+
+.project-carousel-btns {
+    display: none;
+    margin: 0 20px;
+    height: 50px;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 800px) {
+    .project-carousel {
+        overflow-x: visible;
+        transition: transform 0.5s ease
+    }
+
+    .project-carousel-btns {
+        display: block;
+    }
+}
+
+/* .project-item {
+    border: 1px solid red;
+} */
+.project-img-container {
+    position: relative;
+}
+
+.project-img-container:hover > p {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.project-img {
+    min-width: 400px;
+    min-height: 300px;
+    /* background-image: url(https://source.unsplash.com/random?scenery/1000x1000); */
+    /* background-size: cover; */
+    /* background-position: 50% 50%; */
+    background-color: black;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    /* border: 1px solid green; */
+    overflow: hidden;
+}
+
+/* .project-img-container {
+    height: 100%;
+} */
+
+.project-img-2 {
+    /* max-width: 400px;
+    max-height: 300px; */
+    height: 230px;
+    /* height: 100%; */
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.project-img-2:hover {
+    transform: scale(1.03);
+    opacity: 0.55;
+    transition: 150ms ease;
+}
+
+
+.project-title {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    color: black;
+    font-size: 1.1rem;
+}
+
+
+.project-title > h3,
+.project-title > p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .project-img-container {
+        width: 80vw;
+    }
+    .project-img-2 {
+        width: 80vw;
+        /* position: relative; */
+    }
+
+    .project-img-container:hover > p {
+        top: 42%;
+        font-size: 1.2rem;
+    }
+
+    .project-title {
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .project-carousel-btn {
+        display: None;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-section {
+        height: auto;
+    }
+    .project-carousel {
+        flex-direction: column;
+        height: 960px;  /* (300px height + 30px margin-top) * 3 */
+        overflow-x: hidden;
+        overflow-y: hidden;
+        transition: height 0.5s ease-in;
+    }
+
+    .project-img {
+        margin-top: 20px;
+    }
+
+    .project-carousel-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .project-carousel-seeMore {
+        height: 80px;
+        /* display: flex;
+        justify-content: center; */
+    }
+    
+    .project-carousel-seeMore-btn,
+    .project-carousel-seeLess-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-image: url(./Images/loginButton.941066cb.jpg);
+        background-position: 10% 50%;
+        color: #4B4B4D;
+        border-radius: 2px;
+        border: None;
+        box-shadow: rgba(45, 45, 45, 0.15) 0 0 2px 2px;
+        /* outline: none; */
+        /* box-shadow:; */
+    }
+     
+    .project-carousel-expand {
+        height: 1600px;   /* (300px height + 30px margin-top) * 5(No of Imgs) */
+        transition: height 0.5s ease-in;
+    }
+    
+    .project-carousel-seeLess-btn {
+        display: none;
+    }
+    
+    .hide-btn {
+        display: None;
+    }
+    
+    .show-btn {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-------------------------------------------------
+---Title design---
+------------------------------------------------- */
+
+.title-bg-1,
+.title-bg-2 {
+    position: relative;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title-bg-1 {
+    background-image: url(./Images/blockTextureW.26de9170.jpg);
+}
+
+.title-bg-2 {
+    background-image: url(./Images/blockTextureY.080166e7.jpg);
+}
+
+@media screen and (max-width: 800px) {
+    .title-bg-1,
+    .title-bg-2 {
+        height: 200px;
+    }
+}
+
+/* Copied */
+.title-line-1 {
+    background-color: rgb(0, 0, 0);
+    bottom: 2vh;
+    content: "";
+    display: block;
+    font-size: 8.7px;
+    height: 10.875px;
+    left: 0px;
+    position: absolute;
+    user-select: none;
+    width: 30vw;
+}
+
+.title-line-2 {
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 20.5805%, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 29.4195%, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 70.5805%, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 79.4195%, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(90deg, blue, red); */
+    /* background-position-x: 0px;
+    background-position-y: 0px; */
+    background-repeat: repeat;
+    background-size: 4.35px 4.35px;
+    bottom: 2vh;
+    content: "";
+    display: block;
+    /* font-size: 8.7px; */
+    height: 10.875px;
+    position: absolute;
+    right: 0px;
+    user-select: none;
+    width: 70vw;
+}
+
+/* Copied */
+.title-text-large {
+    background-clip: text;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 20.5805%, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 29.4195%, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 70.5805%, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 79.4195%, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0));
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: repeat;
+    background-size: 4.44311px 4.44311px;
+    bottom: 2.2vh;
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    font-family: Novecentowide-Bold;
+    font-size: 138.847px;
+    height: 138.837px;
+    left: 30vw;
+    letter-spacing: -5.5px;
+    line-height: 139px;
+    margin: 0;
+    /* margin-left: -1.11078px; */
+    opacity: 0.6;
+    padding-right: 8.88622px;
+    position: absolute;
+    user-select: none;
+    width: 70vw;
+}
+
+.title-text-small {
+    bottom: 4.5vh;
+    display: block;
+    font-family: Gilroy-ExtraBold, SourceHanSans-Bold;
+    font-size: 36.975px;
+    height: 36.975px;
+    left: 30vw;
+    line-height: 36.975px;
+    position: absolute;
+    user-select: none;
+    width: 70vw;
+    font-weight: 900;
+    margin: 0;
+}
+
+.title-left-design {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+
+    .title-left-design {
+        aspect-ratio: auto 525 / 351;
+        bottom: 42.9562px;
+        color: rgba(0, 0, 0, 0);
+        display: block;
+        font-size: 8.7px;
+        height: 190.85px;
+        left: 20.125px;
+        opacity: 0.5;
+        overflow-clip-margin: content-box;
+        overflow-x: clip;
+        overflow-y: clip;
+        position: absolute;
+        user-select: none;
+        width: 285.462px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-wrapper {
+    height: auto;
+}
+
+.main-content {
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-------------------------------------------------
+---Footer Section---
+------------------------------------------------- */
+
+.footer-section {
+    background: rgb(26, 26, 26);
+    height: 340px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-list__link,
+.footer__link {
+    color: grey;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-------------------------------------------------
+-------------------------------------------------
+---Special Effects---
+-------------------------------------------------
+-------------------------------------------------
+*/
+
+
+
+
+
+
+/*
+--------------------------------------------
+---Scroll Into View, CHATGPT---
+-------------------------------------------- */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    z-index: -1;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+--------------------------------------------
+---Infinite Logo Slider, YOUTUBE + GITHUB---https://www.youtube.com/watch?v=nAjR0Oj0J8E---
+-------------------------------------------- */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes slideReverse {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+  
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    /* background: white; */
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+}
+
+/* .logos:hover .logos-slide {
+    animation-play-state: paused;
+} */
+
+.logos-slide {
+    display: inline-block;
+    /* animation: 35s slide infinite linear; */
+    animation: 15s slide infinite linear;
+}
+
+.logos-slide-2 {
+    display: inline-block;
+    animation: 15s slideReverse infinite linear;
+}
+
+.logos-slide > span {
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    .logos-slide > span {
+        font-size: 2.5rem;
+        margin-left: 3.7rem;
+    }
+}
+
+
+/* .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

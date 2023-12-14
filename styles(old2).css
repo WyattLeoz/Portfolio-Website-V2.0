@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+body {
+    font-size: 1rem; /* Default font size for most screens */
+  
+    /* Responsive font sizes */
+    @media (max-width: 600px) {
+      font-size: 0.875rem; /* Adjust for smaller screens */
+    }
+  
+    @media (min-width: 1200px) {
+      font-size: 1.125rem; /* Adjust for larger screens */
+    }
+  }
+  
+
+
+/* Nav Section */
+
+.nav {
+    display: flex;
+    position: relative;
+    height: 6rem; /* Default height for larger screens */
+    align-items: center;
+    background-image: url(./Images/nav.77e6df56.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-logo-wrapper {
+    display: flex;
+}
+
+.nav-logo {
+    height: 8rem; /* Default height for larger screens */
+    margin-left: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-dev {
+    font-size: 2.5rem;
+    position: relative;
+    top: 2.25rem;
+    right: 1rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .nav-logo {
+        height: 4.75rem;
+        /* top: 0.rem; */
+    }
+
+    .nav-dev {
+        font-size: 1.25rem;
+        top: 1.65rem;
+    }
+}
+
+.nav-audio {
+    height: 2rem;
+    color: white;
+    /* position: relative;
+    top: 2.25rem; */
+}
+
+.nav-no-audio {
+    height: 2.5rem;
+    /* position: relative;
+    top: 2.25rem; */
+}
+
+@media screen and (max-width: 800px) {
+    .nav-dev {
+        font-size: 1.25rem;
+    }
+    
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu,
+.menu-close {
+    display: none;
+    z-index: 10;
+}
+
+.nav-login {
+    position: relative;
+    width: 12.75rem;
+    min-height: 6rem;
+    font-weight: bold;
+}
+
+.nav-login-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-login-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.nav-link-login {
+    display: none;
+}
+
+.nav-link-login > a {
+    color: black;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-ul {
+        /* font-size: 1.6rem; */
+        padding: 1rem 2rem;
+    }
+
+    .nav-link {
+        margin-right: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav {
+        height: 3.5rem;
+    }
+
+    .nav-logo {
+        height: 5rem;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    .nav-wrapper {
+        display: relative;
+    }
+
+    .nav-ul {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-image: url(./Images/menuBg.e4e7c97e.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.25rem;
+        padding-bottom: 100%;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(-100%);
+        transition: 200ms ease-in;
+    }
+
+    .nav-ul-show {
+        transform: translateX(0);
+        transition: 200ms ease-in;
+    }
+
+    .nav-link {
+        margin-right: 2rem;
+        padding-top: 4rem;
+    }
+  
+    .menu {
+        display: flex; /* Show hamburger icon on smaller screens */
+        height: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .menu-close {
+        height: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-login {
+        display: none;
+    }
+
+    .nav-link:first-child {
+        padding-top: 5rem;
+    }
+
+    .nav-link:last-child {
+        display: block;
+        background-image: url(./Images/loginButton.941066cb.jpg);
+        background-position: 10%;
+        margin-top: 3rem;
+        padding: 1.25rem 2.5rem;
+        border-radius: 0.25rem;
+        color: black;
+    }
+}
+
+
+
+
+
+/* Header section */
+
+header {
+    margin-top: 1200px;
+    background-color: grey;
+}
+
+main {
+    margin-top: 1200px;
+    background-color: grey;
+}
+
+.nav-link > a:active {
+    color: yellow;
+}
