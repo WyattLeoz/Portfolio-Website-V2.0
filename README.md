@@ -1,2 +1,2 @@
-﻿# Portfolio-Website-V2.0
+﻿# Portfolio-Website
 https://kzdev-website.web.app/
